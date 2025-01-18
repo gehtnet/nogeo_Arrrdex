@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - nogeo
-  pull_request:
-branches:
-     - nogeo
-workflow_dispatch:
+    pull_request:
+  branches:
+      - nogeo
+  workflow_dispatch:
 
 env:
   DEX_API: "kdf_kwd"
