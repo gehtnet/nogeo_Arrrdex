@@ -1,3 +1,4 @@
+name: komodo-wallet-desktop CI
 
 on:
   push:
@@ -14,14 +15,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      # Add your build steps here
-
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: binaries
-          path: path/to/binaries/*
 env:
   DEX_API: "kdf_kwd"
   DEX_RPCPORT: 7762
